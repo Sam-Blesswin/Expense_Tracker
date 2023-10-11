@@ -19,6 +19,10 @@ JSX is a declarative syntax that looks similar to HTML but is actually a way to 
 
 They are reusable, self-contained pieces of code that encapsulate a specific piece of functionality or UI element.
 
+## Props
+
+"props" (short for properties) are a mechanism for passing data from a parent component to a child component. They allow you to make your components dynamic and reusable by passing data to child components.
+
 ### Virtual DOM
 
 React uses a virtual representation of the actual DOM called the Virtual DOM. When you update the state of a component, React constructs a new Virtual DOM tree. It then efficiently calculates the difference between the new and old Virtual DOM trees and updates the real DOM only with the necessary changes. This process abstracts away the low-level DOM manipulation details and makes it more declarative.
