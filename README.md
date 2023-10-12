@@ -11,6 +11,10 @@ React = HTML, CSS and JavaScript
 It is a programming paradigm that emphasizes describing "what" you want to achieve rather than explicitly specifying "how" to achieve it.
 React encourages developers to build user interfaces using a declarative style, which means you define the desired UI state, and React takes care of updating the actual DOM to match that state efficiently
 
+### Virtual DOM
+
+React uses a virtual representation of the actual DOM called the Virtual DOM. When you update the state of a component, React constructs a new Virtual DOM tree. It then efficiently calculates the difference between the new and old Virtual DOM trees and updates the real DOM only with the necessary changes. This process abstracts away the low-level DOM manipulation details and makes it more declarative.
+
 ## JSX (JavaScript XML)
 
 JSX is a declarative syntax that looks similar to HTML but is actually a way to describe the desired component tree in a declarative manner using JavaScript.
@@ -23,6 +27,7 @@ They are reusable, self-contained pieces of code that encapsulate a specific pie
 
 "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They allow you to make your components dynamic and reusable by passing data to child components.
 
-### Virtual DOM
+## State
 
-React uses a virtual representation of the actual DOM called the Virtual DOM. When you update the state of a component, React constructs a new Virtual DOM tree. It then efficiently calculates the difference between the new and old Virtual DOM trees and updates the real DOM only with the necessary changes. This process abstracts away the low-level DOM manipulation details and makes it more declarative.
+State allows components to store and manage data that can change over time, which is crucial for building dynamic and interactive user interfaces. It determines a component's behavior and appearance. When the state changes, React re-renders the component to reflect those changes.
+
