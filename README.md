@@ -26,8 +26,16 @@ They are reusable, self-contained pieces of code that encapsulate a specific pie
 ## Props
 
 "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They allow you to make your components dynamic and reusable by passing data to child components.
+You can also pass data from a child component to a parent component in React by passing a function as a prop to the child and invoking it with the required data from within the child component.
 
 ## State
 
 State allows components to store and manage data that can change over time, which is crucial for building dynamic and interactive user interfaces. It determines a component's behavior and appearance. When the state changes, React re-renders the component to reflect those changes.
 
+## Lift Up
+
+you need to share some data or functionality between two or more components that are not directly connected in a parent-child relationship (you cannot share data between sibling component). "Lifting up" allows you to solve this problem. This allows us to more easily share state among all of these components that need rely upon it.
+
+## Derived / Computed State
+
+the concept of "derived" state refers to creating new pieces of data or state in a component that are calculated based on existing data or props. Don't need to maintain unncessary state when a data can be computed from other state.

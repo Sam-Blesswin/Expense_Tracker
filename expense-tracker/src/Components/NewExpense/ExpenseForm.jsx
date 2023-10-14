@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './ExpenseForm.css';
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   //multiple states
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setEnteredAmount] = useState('');
@@ -45,12 +45,13 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
 
+    //pass data to parent component (Bottom Up)
+    props.onSaveExpenseData(expenseData);
+
     //to clear the form after submit
     setEnteredTitle('');
     setEnteredAmount('');
     setEnteredDate('');
-
-    console.log(expenseData);
   };
 
   return (
@@ -79,7 +80,7 @@ const ExpenseForm = () => {
           <label>Date</label>
           <input
             type="date"
-            min="2023-01-01"
+            min="2022-01-01"
             max="2050-12-31"
             value={enteredDate}
             onChange={dateChangeHandler}
