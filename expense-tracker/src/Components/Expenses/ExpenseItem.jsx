@@ -29,10 +29,6 @@ const ExpenseItem = (props) => {
   //always return an array of size 2. first element is the state, second element is a function to update the state (setState).
   //setState updates the state and triggers a re-render.
 
-  const [title, setTitle] = useState(props.title); //only initialized first time 
-  const clickHandler = () => {
-    setTitle('updated!');
-  };
   return (
     //root element is first <div>
     //class in html changed to className in react.
@@ -41,10 +37,9 @@ const ExpenseItem = (props) => {
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
-        <h2>{title}</h2>
+        <h2>{props.title}</h2>
         <div className="expense-item__price">{props.amount}</div>
       </div>
-      <button onClick={clickHandler}>change title</button>
     </Card>
   );
 };

@@ -39,3 +39,7 @@ you need to share some data or functionality between two or more components that
 ## Derived / Computed State
 
 the concept of "derived" state refers to creating new pieces of data or state in a component that are calculated based on existing data or props. Don't need to maintain unncessary state when a data can be computed from other state.
+
+## key
+
+key in react component is essential for efficient list rendering, enabling React to identify and update individual list items with minimal DOM manipulation. It ensures correct state preservation during re-renders and prevents unnecessary rendering of unchanged components. Using a unique and stable identifier as the `key`, such as an item's ID, is crucial for its effectiveness.
