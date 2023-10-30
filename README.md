@@ -28,6 +28,10 @@ They are reusable, self-contained pieces of code that encapsulate a specific pie
 "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They allow you to make your components dynamic and reusable by passing data to child components.
 You can also pass data from a child component to a parent component in React by passing a function as a prop to the child and invoking it with the required data from within the child component.
 
+### props.children: 
+
+a default parameter passed to components via props by setting value between custom tags
+
 ## State
 
 State allows components to store and manage data that can change over time, which is crucial for building dynamic and interactive user interfaces. It determines a component's behavior and appearance. When the state changes, React re-renders the component to reflect those changes.
