@@ -28,7 +28,7 @@ They are reusable, self-contained pieces of code that encapsulate a specific pie
 "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They allow you to make your components dynamic and reusable by passing data to child components.
 You can also pass data from a child component to a parent component in React by passing a function as a prop to the child and invoking it with the required data from within the child component.
 
-### props.children: 
+### props.children:
 
 a default parameter passed to components via props by setting value between custom tags
 
@@ -47,3 +47,12 @@ the concept of "derived" state refers to creating new pieces of data or state in
 ## key
 
 key in react component is essential for efficient list rendering, enabling React to identify and update individual list items with minimal DOM manipulation. It ensures correct state preservation during re-renders and prevents unnecessary rendering of unchanged components. Using a unique and stable identifier as the `key`, such as an item's ID, is crucial for its effectiveness.
+
+## ref
+
+ref allows to directly access and manipulate DOM element.
+Preserving Values Across Component Rerenders: Refs can be used to store values that persist across component re-renders, even when the component's state or props change. This is particularly useful when you want to maintain values that shouldn't be reset during re-renders.
+
+## portal
+
+createportal, a way to render components outside their parent DOM hierarchy, allowing you to render content in a different part of the DOM tree while maintaining React's component structure and state management
